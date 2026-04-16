@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="myGraphAnchorPane" prefHeight="900.0" prefWidth="1210.0" style="-fx-background-color: #AFD3E2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xchange.controller.MyGraphsController">
+   <children>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="1210.0" style="-fx-background-color: #F7FAFC;" text="My Graphs">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="myGraphsTable" layoutY="47.0" prefHeight="417.0" prefWidth="1210.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="179.99999487400055" text="Name" />
+          <TableColumn fx:id="descriptionColumn" minWidth="0.0" prefWidth="375.99998474121094" text="Description" />
+            <TableColumn fx:id="dateCreatedColumn" prefWidth="86.66668701171875" text="Date Created" />
+            <TableColumn fx:id="dateFromColumn" editable="false" prefWidth="86.0" text="Date From" />
+            <TableColumn fx:id="dateToColumn" prefWidth="86.6666259765625" text="Date To" />
+            <TableColumn fx:id="fromColumn" prefWidth="55.99993896484375" text="From" />
+            <TableColumn fx:id="toColumn" prefWidth="54.6666259765625" text="To" />
+            <TableColumn fx:id="importanceColumn" minWidth="0.0" prefWidth="71.3333740234375" text="Importance" />
+            <TableColumn fx:id="viewColumn" prefWidth="67.33331298828125" text="View" />
+            <TableColumn fx:id="downloadColumn" prefWidth="76.6666259765625" text="Download" />
+            <TableColumn fx:id="removeColumn" prefWidth="77.0" text="Remove" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="486.0" prefHeight="410.0" prefWidth="1210.0">
+         <children>
+            <LineChart fx:id="MyGraph" prefHeight="410.0" prefWidth="1210.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" forceZeroInRange="false" side="LEFT" tickLabelFill="#f7fafc" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

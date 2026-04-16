@@ -1,0 +1,21 @@
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Java build outputs
+*.class
+out/
+build/
+target/
+
+# OS files
+.DS_Store
+
+# Local SDKs / dependencies (download locally, do not commit)
+javafx-sdk-*/
+sqljdbc_*/
+
+# Environment files
+.env
+.env.*

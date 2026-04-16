@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xchange.controller.SignInController">
+   <children>
+      <AnchorPane prefHeight="520.0" prefWidth="365.0" style="-fx-background-color: #19A7CE;">
+         <children>
+            <ImageView fx:id="mainLogoView" fitHeight="380.0" fitWidth="365.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/21.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="365.0" prefHeight="520.0" prefWidth="365.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="33.0" layoutY="110.0" prefHeight="46.0" prefWidth="299.0" text="SIGN IN TO KNOW YOUR MONEY!" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="218.0" text="Enter your username" />
+            <TextField fx:id="usernameTextField" layoutX="48.0" layoutY="244.0" prefHeight="25.0" prefWidth="299.0" promptText="Username" />
+            <ImageView fx:id="logoForUsername" fitHeight="25.0" fitWidth="25.0" layoutX="18.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="283.0" text="Enter your password" />
+            <PasswordField fx:id="passwordField" layoutX="48.0" layoutY="309.0" prefHeight="25.0" prefWidth="299.0" promptText="Password" />
+            <ImageView fx:id="logoForPassword" fitHeight="25.0" fitWidth="25.0" layoutX="18.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/lock.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="37.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not A Member?" />
+            <Text layoutX="17.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="_________________________" />
+            <Button fx:id="SignUpButton" layoutX="24.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#signUpNowButtonListener" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #FFB21E;" text="SignUp Now!">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="ForgotPasswordButton" layoutX="227.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#forgotPasswordButtonListener" style="-fx-background-color: #FFB21E;" text="Forgot Password">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="SignInButton" layoutX="138.0" layoutY="448.0" mnemonicParsing="false" onMouseClicked="#signInButtonListener" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #FFB21E;" text="Sign In">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label fx:id="invalidMessage" alignment="CENTER" layoutX="14.0" layoutY="170.0" prefHeight="17.0" prefWidth="335.0" textFill="#ef0606" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

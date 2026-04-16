@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="helpAnchorPane" prefHeight="900.0" prefWidth="1210.0" style="-fx-background-color: #AFD3E2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="1210.0" style="-fx-background-color: #F7FAFC;" text="Help">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="983.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Icons/Coin.jpg" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="31.0" layoutY="230.0" prefHeight="447.0" prefWidth="1130.0" style="-fx-background-color: #AFD3E2;" text="&#10;With the Convert Currency page, you may see the values of desired currencies by selecting them from the dropdown menu.&#10;&#10;You may calculate the selected currency’s value by giving an amount.&#10;&#10;You will also see a graph that shows the rate of change of the chosen currency over the selected time interval.&#10;&#10;With the Create Graph option, you may create the graphs of desired currencies by selecting a currency and defining a specific time interval.&#10;&#10;You may also save and download the graphs you created for later purposes.&#10;&#10;With the My Graphs option, you may see your previously saved graphs and download them if you haven’t.&#10;&#10;With the settings menu, you may set your default currency and change the">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Text fill="#f7fafc" layoutX="31.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEEMS LIKE YOU ARE CONFUSED LET US HELP YOU">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="235.0" fitWidth="535.0" layoutX="626.0" layoutY="677.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Icons/33333.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="192.0" layoutX="31.0" layoutY="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Icons/111111.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

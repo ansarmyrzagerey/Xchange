@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="createAnchorPane" prefHeight="900.0" prefWidth="1210.0" style="-fx-background-color: #AFD3E2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xchange.controller.CreateGraphController">
+   <children>
+      <AnchorPane layoutX="339.0" layoutY="58.0" prefHeight="273.0" prefWidth="531.0" style="-fx-background-color: #F7FAFC;">
+         <children>
+            <Text layoutX="152.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="355.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="33.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="________________________________________________________________________________________________" />
+            <ImageView fx:id="fromCurrencyFlag" fitHeight="70.0" fitWidth="63.0" layoutX="14.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Flags/united%20states.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="toCurrencyFlag" fitHeight="70.0" fitWidth="63.0" layoutX="454.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Flags/turkey.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="240.0" layoutY="126.0" mnemonicParsing="false" onMouseClicked="#changeButtonAction" prefHeight="38.0" prefWidth="63.0" style="-fx-background-color: #26278D;" text="Change" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <DatePicker fx:id="currencyFromDatePicker" layoutX="64.0" layoutY="210.0" onAction="#startDateListener" />
+            <DatePicker fx:id="currencyToDatePicker" layoutX="287.0" layoutY="210.0" onAction="#endDateListener" />
+            <ComboBox fx:id="convertFromBox" layoutX="102.0" layoutY="68.0" onAction="#fromCurrencyDropdownAction" prefWidth="150.0" />
+            <ComboBox fx:id="convertToBox" layoutX="287.0" layoutY="68.0" onAction="#toCurrencyDropdownAction" prefWidth="150.0" />
+            <Text layoutX="117.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="330.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ending Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="1210.0" style="-fx-background-color: #F7FAFC;" text="Create Graph">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="linearChart" layoutX="25.0" layoutY="414.0" prefHeight="472.0" prefWidth="1066.0">
+        <xAxis>
+          <CategoryAxis prefHeight="0.0" prefWidth="1013.0" side="BOTTOM" tickLabelsVisible="false" tickMarkVisible="false" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis forceZeroInRange="false" prefHeight="442.0" prefWidth="0.0" side="LEFT" tickLabelFill="#f7fafc" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="531.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#generateNowButtonAction" prefHeight="38.0" prefWidth="147.0" text="Generate now!">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="1089.0" layoutY="728.0" mnemonicParsing="false" onMouseClicked="#saveButtonAction" prefHeight="62.0" prefWidth="119.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="1089.0" layoutY="811.0" mnemonicParsing="false" onMouseClicked="#downloadButtonAction" prefHeight="61.0" prefWidth="119.0" text="Download">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
