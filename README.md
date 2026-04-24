@@ -3,6 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk)
 ![JavaFX](https://img.shields.io/badge/JavaFX-21-blue)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-Express-CC2927?logo=microsoftsqlserver)
+
 A JavaFX desktop application for user-based currency conversion and historical exchange-rate graph tracking, backed by Microsoft SQL Server. Developed as a team for CS102, Bilkent University, Fall 2023.
 
 ## Table of Contents
